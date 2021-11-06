@@ -99,6 +99,7 @@ section .title::after{
     color: #fff;
     font-size: 35px;
     font-weight: 600;
+	transition: color 0.3s ease;
 }
 .navbar .logo a span{
     color: crimson;
@@ -123,7 +124,10 @@ section .title::after{
     color: crimson;
 }
 .navbar.sticky .menu li a:hover{
-    color: #fff;
+    color: #000000;
+}
+.navbar.sticky .logo a:hover{
+    color: #000000;
 }
 
 /* menu btn styling */
@@ -586,12 +590,13 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
 @import url('https://fonts.googleapis.come/css?family=Poppins&display=swap');
 *{
 	box-sizing: border-box;
 }
 button{
-	background-color: #47a386;
+	background-color: crimson;
 	border: 0;
 	border-radius: 5px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -621,18 +626,96 @@ button{
 	width: 600px;
 	max-width: 100%;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  text-align: center;
+	text-align: center;
 }
 .modal h1{
 	margin: 0;
 }
 .modal p{
 	font-size: 14px;
+	color: black;
 	opacity: 0.7;
 }	
 .modal-container.show{
 	pointer-events: auto;
 	opacity: 1;
 }
-	
+.slider_nao{
+	width: 350px;
+	height: 500px;
+	overflow: hidden;
+}
+.slides_nao{
+	width: 500%;
+	height: 300px;
+	display: flex;
+}
+.slides_nao input{
+	display: none;
+}
+.slide_nao{
+	width: 20%;
+	transition: 2s;
+}
+.slide_nao img{
+	width: 350px;
+	height: 300px;
+	border-radius: 20px;
+}
+/**css for manual slide navigation*/
+.navigation-manual{
+	position: absolute;
+	width: 350px;
+	margin-top: -40px;
+	display: flex;
+	justify-content: center;
+}
+.manual-btn{
+	border: 2px solid white;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+.manual-btn:not(:last-child){
+	margin-right: 40px;
+}
+.manual-btn:hover{
+	background: crimson;
+}
+#radio1:checked ~ .first{
+	margin-left: 0;
+}
+#radio2:checked ~ .first{
+	margin-left: -20%;
+}
+#radio3:checked ~ .first{
+	margin-left: -40%;
+}
+#radio4:checked ~ .first{
+	margin-left: -60%;
+}
+/**css for automatic navigation*/
+.navigation-auto{
+	position: absolute;
+	display: flex;
+	width: 350px;
+	justify-content: center;
+	margin-top: 260px;
+}
+.navigation-auto div{
+	border: 2px solid #40D3DC;
+	padding: 5px;
+	border-radius: 10px;
+	transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+	margin-right: 40px;
+}
+
+
+
+
+
+
 	
