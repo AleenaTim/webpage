@@ -63,6 +63,7 @@ $(document).ready(function(){
         }
     });
 });
+
 const open = document.getElementById('open');
 const modal_container = document.getElementById('modal_container');
 const close = document.getElementById('close');
@@ -73,3 +74,12 @@ open.addEventListener('click', () => {
 close.addEventListener('click', () => {     
 	modal_container.classList.remove('show');
 });
+
+var counter = 1;
+setInterval(function(){
+	document.getElementById('radio' + counter).checked = true;
+	counter++;
+	if(counter > 4){
+		counter = 1;
+	}
+}, 5000);
