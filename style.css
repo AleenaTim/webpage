@@ -592,25 +592,24 @@ footer span a:hover{
 }
 .row {
   display: flex;
-  
 }
 .column {
-  flex: 33.33%;
-  padding: 1px;
+  padding: 50px 150px;
+  margin: 50px;
   
 }
 @import url('https://fonts.googleapis.come/css?family=Poppins&display=swap');
 *{
 	box-sizing: border-box;
+	
 }
 button{
 	background-color: crimson;
-	border: 0;
-	border-radius: 5px;
+	border-radius: 10px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 	color: #fff;
 	font-size: 23px;
-	padding: 10px 25px;
+	padding: 5px;
 	
 }
 button:hover{
@@ -631,6 +630,7 @@ button:hover{
 	width: 100vw;
 	display:flex;
 	transition: opacity 0.3s ease;
+	
 }
 .modal{
 	border-radius: 5px;
