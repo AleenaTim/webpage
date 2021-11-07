@@ -75,6 +75,8 @@ close.addEventListener('click', () => {
 	modal_container.classList.remove('show');
 });
 
+
+/*
 var counter = 1;
 setInterval(function(){
 	document.getElementById('radio' + counter).checked = true;
@@ -82,4 +84,4 @@ setInterval(function(){
 	if(counter > 4){
 		counter = 1;
 	}
-}, 5000);
+}, 5000);*/
