@@ -31,6 +31,7 @@
             </div>
         </div>
     </nav>
+	<div class="red_top"></div> 
     <!-- about section start -->
     <section class="about" id="about">
         <div class="max-width">
@@ -38,11 +39,34 @@
             <div class="about-content">
                 <div class="column left">
                     <img src="aleenaprofile.jpg">
+					<div class="row">
+						<div class="linkedin">
+							<a href="https://www.linkedin.com/in/aleenatim/">
+								<i class="fab fa-linkedin"></i>
+							</a>
+						</div>
+						<div class="github">
+							<a href="https://github.com/AleenaTim/">
+								<i class="fab fa-github-square"></i>
+							</a>
+						</div>
+						<div class="email">
+							<a href="https://github.com/AleenaTim/">
+								<i class="fas fa-envelope"></i>
+							</a>
+						</div>
+						<div class="slack">
+							<a href="https://github.com/AleenaTim/">
+								<i class="fab fa-slack"></i>
+							</a>
+						</div>
+					</div>
                 </div>
                 <div class="column right">
-                    <div class="text">....</div>
-                    <p>.....</p>
-                    <a href="#">Download</a>
+                    <div class="text"></div>
+                    <p>An aspiring software engineer!</p>
+					
+                    <!--<a href="#">Download</a>-->
                 </div>
             </div>
         </div>
@@ -105,7 +129,6 @@
         </div>
     </section>
 
-
     <!-- projects section start -->
     <section class="projects" id="projects">
         
@@ -113,6 +136,7 @@
 			<div class="row">
 			<div style="text-align: center">
 				<div class="column">
+				
 					<button id="open">
 						NAO Robotics Social Assistant
 					</button>
@@ -209,17 +233,7 @@
 				</div>
 			  <!-- image slider end-->
 			
-			<div class="modal-container" id="modal_container">
-				<div class="modal">
-					<h1>Modals are cool</h1>
-					<p>
-						bladddddddddddddddddddddddddddddddddddh
-					</p>
-					<button id="close">
-						x
-					</button>
-				</div>
-			</div>
+			
 
         </div>
     </section>
@@ -270,6 +284,26 @@
                 </div>
             </div>
         </div>
+			<div class="modal-container" id="modal_container">
+				<div class="modal">
+					<div class="modal-header">
+					Modals are cool
+					</div>
+					<div class="modal-text">
+					<p>
+						<embed src="nao_project/NAO Project_ Social_Assistive_Robot.pdf" width='100%' height='500px' frameborder='0'> 
+						One of the motivations for our research is to explore the potential role for humanoid robots in the field of education; especially the education of young children in their formative years of pre-school and grammar school. We propose to investigate the following questions: (1) How can children, teachers and robots work together to improve the academic skills as well as social and cognitive skills for children with disabilities? (2) Can humanoid robots inspire and expand the creativity for children with disabilities? Research shows that children are more fascinated with robotic interactions and its capabilities. The way the NAO interacts with children is inspired by the Applied Behavior Analysis (ABA) method [1], which means that NAO will prompt the child to perform an action. NAO’s unique form and complex personality makes it a powerful platform to engage students in educational activities.
+						
+						We use the software, Choregraphe for the NAO in order to design simple, interactive games with the intention to teach sign language through mathematics and color matching games. By incorporating NAO’s sensors and humanoid features, the learning process will be more effective for young children. For the math game program, we use RNG to enable the NAO to come up with arithmetic problems. As for the color matching game, NAO will ask the user to determine the color of its eyes. The game player will then use the Sign Language (numbers) paper cut-outs provided to choose the corresponding answer. The educational game design used the NAO’s microphones, cameras and speakers, speech recognition, face recognition, object recognition, verbal communication. If the player answers all given questions correctly, NAO will perform an action as reward. Python API is used to design more complex, educational games to visualize how we can use AI to reinforce memory building for academic skills, to test for retention and find the weak points of students in the learning process.
+						</embed>
+					</p>
+					<button id="close">
+						x
+					</button>
+				</div>
+				</div>
+			</div>
+
     </section>
 
     <!-- footer section start -->
@@ -278,5 +312,6 @@
     </footer>
 
     <script src="script.js"></script>
+	
 </body>
 </html>
