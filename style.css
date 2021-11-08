@@ -10,7 +10,47 @@
 html{
     scroll-behavior: smooth;
 }
-
+.linkedin a i{
+	#position: fixed;
+	color: black;
+	font-size: 50px;
+	padding: 7px;
+}
+.linkedin a i:hover{
+	color: crimson;
+	transition: all 0.3s ease;
+}
+.github a i{
+	color: black;
+	font-size: 50px;
+	padding: 7px;
+}
+.github a i:hover{
+	color: crimson;
+	transition: all 0.3s ease;
+}
+.slack a i{
+	color: black;
+	font-size: 50px;
+	padding: 7px;
+}
+.slack a i:hover{
+	color: crimson;
+	transition: all 0.3s ease;
+}
+.email a i{
+	color: black;
+	font-size: 50px;
+	padding: 7px;
+}
+.email a i:hover{
+	color: crimson;
+	transition: all 0.3s ease;
+}
+.red_top { 
+	background-color: rgb(255, 0, 0);
+	height: 100px;
+} 
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -225,8 +265,8 @@ section .title::after{
     width: 10%;
 }
 .about .about-content .left img{
-    height: 200px;
-    width: 170px;
+    height: 280px;
+    width: 240px;
     object-fit: cover;
     border-radius: 6px;
 }
@@ -377,9 +417,9 @@ section .title::after{
     align-items: center;
 }
 .contact .contact-content .row .info{
-    margin-left: 30px;
+    margin-left: 20px;
 }
-.contact .contact-content .row i{
+.contact .contact-content .row i{  /**here*/
     font-size: 25px;
     color: crimson;
 }
@@ -628,27 +668,26 @@ button:hover{
 	left: 0;
 	height: 100vh;
 	width: 100vw;
-	display:flex;
+	display: flex;
 	transition: opacity 0.3s ease;
 	
 }
 .modal{
 	border-radius: 5px;
-	padding: 30px 500px;
+	#padding: 30px 100px;
 	background-color: #fff;
-	width: 600px;
+	width: 900px;
 	max-width: 100%;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 	text-align: center;
 }
-.modal h1{
-	margin: 0;
-	color: black;
+.modal-header{
+	color: blue;
+	
 }
-.modal p{
+.modal-text{
 	font-size: 14px;
 	color: black;
-	opacity: 0.7;
 }	
 .modal-container.show{
 	pointer-events: auto;
