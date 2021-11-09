@@ -1,3 +1,29 @@
+const btns = document.querySelectorAll("[data-target]");
+const close_modals = document.querySelectorAll(".close-modal");
+const overlay = document.getElementById("overlay");
+
+btns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    document.querySelector(btn.dataset.target).classList.add("active");
+    overlay.classList.add("active");
+  });
+});
+
+close_modals.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const modal = btn.closest(".modal");
+    modal.classList.remove("active");
+    overlay.classList.remove("active");
+  });
+});
+
+window.onclick = (event) => {
+  if (event.target == overlay) {
+    const modals = document.querySelectorAll(".modal");
+    modals.forEach((modal) => modal.classList.remove("active"));
+    overlay.classList.remove("active");
+  }
+};
 $(document).ready(function(){
     $(window).scroll(function(){
         // sticky navbar on scroll script
@@ -9,14 +35,14 @@ $(document).ready(function(){
         
         // scroll-up button show/hide script
         if(this.scrollY > 600){
-            $('.scroll-up-btn').addClass("show");
+            $('.scroll-up-open').addClass("show");
         }else{
-            $('.scroll-up-btn').removeClass("show");
+            $('.scroll-up-open').removeClass("show");
         }
     });
 
     // slide-up script
-    $('.scroll-up-btn').click(function(){
+    $('.scroll-up-open').click(function(){
         $('html').animate({scrollTop: 0});
         // removing smooth scroll on slide-up button click
         $('html').css("scrollBehavior", "auto");
@@ -28,9 +54,9 @@ $(document).ready(function(){
     });
 
     // toggle menu/navbar script
-    $('.menu-btn').click(function(){
+    $('.menu-open').click(function(){
         $('.navbar .menu').toggleClass("active");
-        $('.menu-btn i').toggleClass("active");
+        $('.menu-open i').toggleClass("active");
     });
 
     // typing text animation script
@@ -63,25 +89,3 @@ $(document).ready(function(){
         }
     });
 });
-
-const open = document.getElementById('open');
-const modal_container = document.getElementById('modal_container');
-const close = document.getElementById('close');
-
-open.addEventListener('click', () => {
-	modal_container.classList.add('show');
-});
-close.addEventListener('click', () => {     
-	modal_container.classList.remove('show');
-});
-
-
-/*
-var counter = 1;
-setInterval(function(){
-	document.getElementById('radio' + counter).checked = true;
-	counter++;
-	if(counter > 4){
-		counter = 1;
-	}
-}, 5000);*/
