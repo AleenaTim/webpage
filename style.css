@@ -11,7 +11,7 @@ html{
     scroll-behavior: smooth;
 }
 .linkedin a i{
-	#position: fixed;
+	/*#position: fixed;*/
 	color: black;
 	font-size: 50px;
 	padding: 7px;
@@ -127,7 +127,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .navbar.sticky{
-    padding: 15px 0;
+    padding: 5px 0;
     background: crimson;
 }
 .navbar .max-width{
@@ -339,8 +339,8 @@ section .title::after{
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
-    #overflow: hidden;
-    #transition: all 0.3s ease;
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
 .projects .carousel .card:hover{
     background: crimson;
@@ -632,70 +632,16 @@ footer span a:hover{
 }
 .row {
   display: flex;
+  
 }
 .column {
   padding: 50px 150px;
-  margin: 50px;
+  margin: 20px;
   
-}
-@import url('https://fonts.googleapis.come/css?family=Poppins&display=swap');
-*{
-	box-sizing: border-box;
-	
-}
-button{
-	background-color: crimson;
-	border-radius: 10px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-	color: #fff;
-	font-size: 23px;
-	padding: 5px;
-	
-}
-button:hover{
-	color: crimson;
-	background: white;
-	transition: .5s;
-}
-.modal-container{
-	background-color: rgba(0, 0, 0, 0.3);
-	position: fixed;
-	align-items: center;
-	justify-content: center;
-	opacity: 0;
-	pointer-events: none;
-	top: 0;
-	left: 0;
-	height: 100vh;
-	width: 100vw;
-	display: flex;
-	transition: opacity 0.3s ease;
-	
-}
-.modal{
-	border-radius: 5px;
-	#padding: 30px 100px;
-	background-color: #fff;
-	width: 900px;
-	max-width: 100%;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-	text-align: center;
-}
-.modal-header{
-	color: blue;
-	
-}
-.modal-text{
-	font-size: 14px;
-	color: black;
-}	
-.modal-container.show{
-	pointer-events: auto;
-	opacity: 1;
 }
 /**nao project*/
 .slider_nao{
-	width: 500px;
+	width: 600px;
 	height: 500px;
 	overflow: hidden;
 }
@@ -712,7 +658,7 @@ button:hover{
 	transition: 2s;
 }
 .slide_nao img{
-	width: 500px;
+	width: 600px;
 	height: 370px;
 	border-radius: 20px;
 }
@@ -720,7 +666,7 @@ button:hover{
 /**css for manual slide navigation*/
 .navigation-manual{
 	position: absolute;
-	width: 500px;
+	width: 600px;
 	margin-top: 80px;
 	display: flex;
 	justify-content: center;
@@ -770,7 +716,7 @@ button:hover{
 
 /******************OCCSS**PROJECT*******************/
 .slider_occss{
-	width: 500px;
+	width: 600px;
 	height: 500px;
 	overflow: hidden;
 }
@@ -787,13 +733,13 @@ button:hover{
 	transition: 2s;
 }
 .slide_occss img{
-	width: 500px;
+	width: 600px;
 	height: 370px;
 	border-radius: 20px;
 }
 .navigation-manual_occss{
 	position: absolute;
-	width: 500px;
+	width: 600px;
 	margin-top: 80px;
 	display: flex;
 	justify-content: center;
@@ -834,5 +780,78 @@ button:hover{
 }
 
 
-
-	
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .container {
+    width: 992px;
+    margin: 0 auto;
+  }
+  
+  .btn {
+    background-color: crimson;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	font-size: 23px;
+	padding: 5px;
+  }
+  .btn:hover{
+	color: crimson;
+	background: white;
+	transition: .5s;
+}
+  .btn:active {
+    transform: scale(0.9);
+  }
+  
+  .close-modal {
+    background: crimson;
+    border: none;
+    font-size: 1.5rem;
+  }
+  
+  .modal {
+    width: 1000px;
+    position: fixed;
+    top: -90%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    transition: top 0.3s ease-in-out;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    z-index: 2;
+    background-color: #fff;
+  }
+  
+  .modal.active {
+    top: 15%;
+  }
+  
+  .modal .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  .modal .body {
+    padding: 0.75rem;
+  }
+  
+  #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  #overlay.active {
+    display: block;
+  }
