@@ -129,189 +129,206 @@
         </div>
     </section>
 
-    <!-- projects section start -->
-    <section class="projects" id="projects">
-        
-		<h2 class="title">Projects</h2>
-			<div class="row">
-			<div style="text-align: center">
-				<div class="column">
-				
-					<button id="open">
-						NAO Robotics Social Assistant
-					</button>
-				<!--image slider start-->
-				<div class="slider_nao">
-					<div class="slides_nao">
-					  <!--radio buttons start-->
-					  <input type="radio" name="radio-btn" id="radio1">
-					  <input type="radio" name="radio-btn" id="radio2">
-					  <input type="radio" name="radio-btn" id="radio3">
-					  <input type="radio" name="radio-btn" id="radio4">
-					  <!--radio buttons end-->
-					  <!--slide images start-->
-					  <div class="slide_nao first">
-						<img src="nao_project/nao1.png" alt="">
-					  </div>
-					  <div class="slide_nao">
-						<img src="nao_project/nao2.png" alt="">
-					  </div>
-					  <div class="slide_nao">
-						<img src="nao_project/nao3.png" alt="">
-					  </div>
-					  <div class="slide_nao">
-						<img src="nao_project/nao4.png" alt="">
-					  </div>
-					  <!--slide images end-->
-					</div>
-					<!--manual navigation start-->
-					<div class="navigation-manual">
-					  <label for="radio1" class="manual-btn"></label>
-					  <label for="radio2" class="manual-btn"></label>
-					  <label for="radio3" class="manual-btn"></label>
-					  <label for="radio4" class="manual-btn"></label>
-					</div>
-					<!--manual navigation end-->
-				</div>
-				</div>
-				</div>
-			  <!-- image slider end-->
-			  <div style="text-align: center">
-			  <div class="column">
-			<button id="open">
-				Online Coronavirus Combat Supply Store
-			</button>
-				<!--image slider start-->
-				<div class="slider_occss">
-					<div class="slides_occss">
-					  <!--radio buttons start-->
-					  <input type="radio" name="radio-btn" id="radio1_occss">
-					  <input type="radio" name="radio-btn" id="radio2_occss">
-					  <input type="radio" name="radio-btn" id="radio3_occss">
-					  <input type="radio" name="radio-btn" id="radio4_occss">
-					  <input type="radio" name="radio-btn" id="radio5_occss">
-					  <input type="radio" name="radio-btn" id="radio6_occss">
-					  <input type="radio" name="radio-btn" id="radio7_occss">
-					  <!--radio buttons end-->
-					  <!--slide images start-->
-					  <div class="slide_occss first">
-						<img src="covid_project/occss1.png" alt="">
-					  </div>
-					  <div class="slide_occss">
-						<img src="covid_project/occss2.png" alt="">
-					  </div>
-					  <div class="slide_occss">
-						<img src="covid_project/occss3.png" alt="">
-					  </div>
-					  <div class="slide_occss">
-						<img src="covid_project/occss4.png" alt="">
-					  </div>
-					  <div class="slide_occss">
-						<img src="covid_project/occss5.png" alt="">
-					  </div>
-					  <div class="slide_occss">
-						<img src="covid_project/occss6.png" alt="">
-					  </div>
-					  <div class="slide_occss">
-						<img src="covid_project/occss7.png" alt="">
-					  </div>
-					  <!--slide images end-->
-					</div>
-					<!--manual navigation start-->
-					<div class="navigation-manual_occss">
-					  <label for="radio1_occss" class="manual-btn"></label>
-					  <label for="radio2_occss" class="manual-btn"></label>
-					  <label for="radio3_occss" class="manual-btn"></label>
-					  <label for="radio4_occss" class="manual-btn"></label>
-					  <label for="radio5_occss" class="manual-btn"></label>
-					  <label for="radio6_occss" class="manual-btn"></label>
-					  <label for="radio7_occss" class="manual-btn"></label>
-					</div>
-					<!--manual navigation end-->
-				</div>
-				</div>
-				</div>
-			  <!-- image slider end-->
-			
-			
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="draftstyle.css" />
+    <title>Modal</title>
+</head>
+
+<body>
+    <div class="modal" id="modal1">
+        <div class="header">
+            <div class="title">NAO Robotics Social Assistant</div>
+            <button class="btn close-modal">&times;</button>
+        </div>
+        <div class="body"><embed src="nao_project/NAO_Project_ Social_Assistive_Robot.pdf" width='100%' height='500px'
+                frameborder='0'>
+            One of the motivations for our research is to explore the potential role for humanoid robots in the field of
+            education; especially the education of young children in their formative years of pre-school and grammar
+            school. We propose to investigate the following questions: (1) How can children, teachers and robots work
+            together to improve the academic skills as well as social and cognitive skills for children with
+            disabilities? (2) Can humanoid robots inspire and expand the creativity for children with disabilities?
+            Research shows that children are more fascinated with robotic interactions and its capabilities. The way the
+            NAO interacts with children is inspired by the Applied Behavior Analysis (ABA) method [1], which means that
+            NAO will prompt the child to perform an action. NAO’s unique form and complex personality makes it a
+            powerful platform to engage students in educational activities.
+
+            We use the software, Choregraphe for the NAO in order to design simple, interactive games with the intention
+            to teach sign language through mathematics and color matching games. By incorporating NAO’s sensors and
+            humanoid features, the learning process will be more effective for young children. For the math game
+            program, we use RNG to enable the NAO to come up with arithmetic problems. As for the color matching game,
+            NAO will ask the user to determine the color of its eyes. The game player will then use the Sign Language
+            (numbers) paper cut-outs provided to choose the corresponding answer. The educational game design used the
+            NAO’s microphones, cameras and speakers, speech recognition, face recognition, object recognition, verbal
+            communication. If the player answers all given questions correctly, NAO will perform an action as reward.
+            Python API is used to design more complex, educational games to visualize how we can use AI to reinforce
+            memory building for academic skills, to test for retention and find the weak points of students in the
+            learning process.
 
         </div>
-    </section>
+    </div>
+    <div class="modal" id="modal2">
+        <div class="header">
+            <div class="title">Online Coronavirus Combat Supply Store</div>
+            <button class="btn close-modal">&times;</button>
+        </div>
+        <div class="body"><embed src="covid_project/COVID_Website_Project.pdf" width='100%' height='800px'
+            frameborder='0'>
+            
+        </div>
+    </div>
+<!-- projects section start -->
+<section class="projects" id="projects">
+        
+    <h2 class="title">Projects</h2>
+        <div class="row">
+        <div style="text-align: center">
+            <div class="column">
+                <button class="btn" data-target="#modal1">NAO Robotics Social Assistant</button>
+            <!--image slider start-->
+            <div class="slider_nao">
+                <div class="slides_nao">
+                  <!--radio buttons start-->
+                  <input type="radio" name="radio-btn" id="radio1">
+                  <input type="radio" name="radio-btn" id="radio2">
+                  <input type="radio" name="radio-btn" id="radio3">
+                  <input type="radio" name="radio-btn" id="radio4">
+                  <!--radio buttons end-->
+                  <!--slide images start-->
+                  <div class="slide_nao first">
+                    <img src="nao_project/nao1.png" alt="">
+                  </div>
+                  <div class="slide_nao">
+                    <img src="nao_project/nao2.png" alt="">
+                  </div>
+                  <div class="slide_nao">
+                    <img src="nao_project/nao3.png" alt="">
+                  </div>
+                  <div class="slide_nao">
+                    <img src="nao_project/nao4.png" alt="">
+                  </div>
+                  <!--slide images end-->
+                </div>
+                <!--manual navigation start-->
+                <div class="navigation-manual">
+                  <label for="radio1" class="manual-btn"></label>
+                  <label for="radio2" class="manual-btn"></label>
+                  <label for="radio3" class="manual-btn"></label>
+                  <label for="radio4" class="manual-btn"></label>
+                </div>
+                <!--manual navigation end-->
+            </div>
+            </div>
+            </div>
+          <!-- image slider end-->
+          <div style="text-align: center">
+          <div class="column">
+            <button class="btn" data-target="#modal2">Online Coronavirus Combat Supply Store</button> 
+        </button>
+            <!--image slider start-->
+            <div class="slider_occss">
+                <div class="slides_occss">
+                  <!--radio buttons start-->
+                  <input type="radio" name="radio-btn" id="radio1_occss">
+                  <input type="radio" name="radio-btn" id="radio2_occss">
+                  <input type="radio" name="radio-btn" id="radio3_occss">
+                  <input type="radio" name="radio-btn" id="radio4_occss">
+                  <input type="radio" name="radio-btn" id="radio5_occss">
+                  <input type="radio" name="radio-btn" id="radio6_occss">
+                  <input type="radio" name="radio-btn" id="radio7_occss">
+                  <!--radio buttons end-->
+                  <!--slide images start-->
+                  <div class="slide_occss first">
+                    <img src="covid_project/occss1.png" alt="">
+                  </div>
+                  <div class="slide_occss">
+                    <img src="covid_project/occss2.png" alt="">
+                  </div>
+                  <div class="slide_occss">
+                    <img src="covid_project/occss3.png" alt="">
+                  </div>
+                  <div class="slide_occss">
+                    <img src="covid_project/occss4.png" alt="">
+                  </div>
+                  <div class="slide_occss">
+                    <img src="covid_project/occss5.png" alt="">
+                  </div>
+                  <div class="slide_occss">
+                    <img src="covid_project/occss6.png" alt="">
+                  </div>
+                  <div class="slide_occss">
+                    <img src="covid_project/occss7.png" alt="">
+                  </div>
+                  <!--slide images end-->
+                </div>
+                <!--manual navigation start-->
+                <div class="navigation-manual_occss">
+                  <label for="radio1_occss" class="manual-btn"></label>
+                  <label for="radio2_occss" class="manual-btn"></label>
+                  <label for="radio3_occss" class="manual-btn"></label>
+                  <label for="radio4_occss" class="manual-btn"></label>
+                  <label for="radio5_occss" class="manual-btn"></label>
+                  <label for="radio6_occss" class="manual-btn"></label>
+                  <label for="radio7_occss" class="manual-btn"></label>
+                </div>
+                <!--manual navigation end-->
+            </div>
+            </div>
+            </div>
+          <!-- image slider end-->
+        
+        
 
-    <!-- contact section start -->
-    <section class="contact" id="contact">
-        <div class="max-width">
-            <h2 class="title">Contact Information</h2>
-            <div class="contact-content">
-                <div class="center">
-                    <div class="icons">
-                        <div class="row">
-                            <i class="fas fa-user"></i>
-                            <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">Aleena Tim</div>
-                            </div>
+    </div>
+</section>
+    <div id="overlay"></div>
+<!-- contact section start -->
+<section class="contact" id="contact">
+    <div class="max-width">
+        <h2 class="title">Contact Information</h2>
+        <div class="contact-content">
+            <div class="center">
+                <div class="icons">
+                    <div class="row">
+                        <i class="fas fa-user"></i>
+                        <div class="info">
+                            <div class="head">Name</div>
+                            <div class="sub-title">Aleena Tim</div>
                         </div>
-                        <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title">New York, NY 11104</div>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info">
+                            <div class="head">Email</div>
+                            <div class="sub-title">aleenatim@gmail.com</div>
                         </div>
-                        <div class="row">
-                            <i class="fas fa-envelope"></i>
-                            <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title">aleenatim@gmail.com</div>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <i class="fab fa-linkedin"></i>
+                        <div class="info">
+                            <div class="head">LinkedIn</div>
+                            <div class="sub-title"><a href="https://www.linkedin.com/in/aleenatim/">https://www.linkedin.com/in/aleenatim/</a></div>
                         </div>
-						<div class="row">
-                            <i class="fab fa-linkedin"></i>
-                            <div class="info">
-                                <div class="head">LinkedIn</div>
-                                <div class="sub-title"><a href="https://www.linkedin.com/in/aleenatim/">https://www.linkedin.com/in/aleenatim/</a></div>
-                            </div>
-                        </div>
-						<div class="row">
-                            <i class="fab fa-github"></i>
-                            <div class="info">
-                                <div class="head">Github</div>
-                                <div class="sub-title"><a href="https://github.com/AleenaTim/">https://github.com/AleenaTim/</a></div>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <i class="fab fa-github"></i>
+                        <div class="info">
+                            <div class="head">Github</div>
+                            <div class="sub-title"><a href="https://github.com/AleenaTim/">https://github.com/AleenaTim/</a></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-			<div class="modal-container" id="modal_container">
-				<div class="modal">
-					<div class="modal-header">
-					Modals are cool
-					</div>
-					<div class="modal-text">
-					<p>
-						<embed src="nao_project/NAO Project_ Social_Assistive_Robot.pdf" width='100%' height='500px' frameborder='0'> 
-						One of the motivations for our research is to explore the potential role for humanoid robots in the field of education; especially the education of young children in their formative years of pre-school and grammar school. We propose to investigate the following questions: (1) How can children, teachers and robots work together to improve the academic skills as well as social and cognitive skills for children with disabilities? (2) Can humanoid robots inspire and expand the creativity for children with disabilities? Research shows that children are more fascinated with robotic interactions and its capabilities. The way the NAO interacts with children is inspired by the Applied Behavior Analysis (ABA) method [1], which means that NAO will prompt the child to perform an action. NAO’s unique form and complex personality makes it a powerful platform to engage students in educational activities.
-						
-						We use the software, Choregraphe for the NAO in order to design simple, interactive games with the intention to teach sign language through mathematics and color matching games. By incorporating NAO’s sensors and humanoid features, the learning process will be more effective for young children. For the math game program, we use RNG to enable the NAO to come up with arithmetic problems. As for the color matching game, NAO will ask the user to determine the color of its eyes. The game player will then use the Sign Language (numbers) paper cut-outs provided to choose the corresponding answer. The educational game design used the NAO’s microphones, cameras and speakers, speech recognition, face recognition, object recognition, verbal communication. If the player answers all given questions correctly, NAO will perform an action as reward. Python API is used to design more complex, educational games to visualize how we can use AI to reinforce memory building for academic skills, to test for retention and find the weak points of students in the learning process.
-						</embed>
-					</p>
-					<button id="close">
-						x
-					</button>
-				</div>
-				</div>
-			</div>
-
+    </div>
     </section>
-
-    <!-- footer section start -->
-    <footer>
-        <span>Aleena Tim | <span>© 2021 Copyright</span>
-    </footer>
-
+        <!-- footer section start -->
+        <footer>
+            <span>Aleena Tim | <span>© 2021 Copyright</span>
+        </footer>
+    
     <script src="script.js"></script>
-	
 </body>
+
 </html>
