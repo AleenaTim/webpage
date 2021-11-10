@@ -600,6 +600,7 @@ footer span a:hover{
     }
 }
 
+
 @media (max-width: 500px) {
     .home .home-content .text-2{
         font-size: 50px;
@@ -635,8 +636,7 @@ footer span a:hover{
   
 }
 .column {
-  padding: 50px 150px;
-  margin: 20px;
+  
   
 }
 /**nao project*/
@@ -809,13 +809,14 @@ body {
   .close-modal {
     background: crimson;
     border: none;
-    font-size: 1.5rem;
+    font-size: .5rem;
   }
   
   .modal {
-    width: 1000px;
+    width: 70%;
+    height: 90%;
     position: fixed;
-    top: -90%;
+    top: -160%;
     left: 50%;
     transform: translate(-50%, -10%);
     transition: top 0.3s ease-in-out;
@@ -823,10 +824,11 @@ body {
     border-radius: 10px;
     z-index: 2;
     background-color: #fff;
+    overflow: auto;
   }
   
   .modal.active {
-    top: 15%;
+    top: 18%;
   }
   
   .modal .header {
@@ -835,6 +837,7 @@ body {
     align-items: center;
     border-bottom: 1px solid #ccc;
     padding: 0.5rem;
+    height: 25px;
     background-color: rgba(0, 0, 0, 0.05);
   }
   
