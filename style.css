@@ -48,12 +48,14 @@ html{
 	transition: all 0.3s ease;
 }
 a:link{
-    color: rgb(22, 181, 255);
+    font-size: 20px;
+    color: rgb(0, 34, 49);
 }
 a:visited{
-    color: rgb(22, 181, 255);
+    color: rgb(1, 36, 53);
 }
 a:hover{
+    
     color: rgb(255, 67, 255);
     transition: all 0.3s ease;
 }
@@ -735,6 +737,7 @@ footer span a:hover{
 	overflow: hidden;
 }
 .slides_occss{
+    
 	width: 500%;
 	height: 300px;
 	display: flex;
@@ -747,6 +750,7 @@ footer span a:hover{
 	transition: 2s;
 }
 .slide_occss img{
+    
 	width: 600px;
 	height: 370px;
 	border-radius: 20px;
