@@ -796,6 +796,61 @@ footer span a:hover{
 #radio7_occss:checked ~ .first{
 	margin-left: -120%;
 }
+/******************CUNY Data App**PROJECT*******************/
+.slider_cuny{
+	width: 600px;
+	height: 500px;
+	overflow: hidden;
+}
+.slides_cuny{
+    
+	width: 500%;
+	height: 300px;
+	display: flex;
+}
+.slides_cuny input{
+	display: none;
+}
+.slide_cuny{
+	width: 20%;
+	transition: 2s;
+}
+.slide_cuny img{
+    
+	width: 600px;
+	height: 370px;
+	border-radius: 20px;
+}
+.navigation-manual_cuny{
+	position: absolute;
+	width: 600px;
+	margin-top: 80px;
+	display: flex;
+	justify-content: center;
+}
+.manual-btn_cuny{
+	border: 2px solid white;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+.manual-btn:not(:last-child){
+	margin-right: 40px;
+}
+.manual-btn:hover{
+	background: crimson;
+}
+#radio1_cuny:checked ~ .first{
+	margin-left: 0;
+}
+#radio2_cuny:checked ~ .first{
+	margin-left: -20%;
+}
+
+
+
+
 
 
 body {
